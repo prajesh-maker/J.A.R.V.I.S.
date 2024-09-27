@@ -19,15 +19,15 @@ function wishMe() {
     }
 
     else if(hr == 12) {
-        speak("Good noon Boss");
+        speak("Good noon sir");
     }
 
     else if(hr > 12 && hr <= 17) {
-        speak("Good Afternoon Boss");
+        speak("Good Afternoon sir");
     }
 
     else {
-        speak("Good Evening Boss");
+        speak("Good Evening sir");
     }
 }
 
@@ -57,7 +57,7 @@ function speakThis(message) {
     speech.text = "I did not understand what you said please try again";
 
     if(message.includes('hey') || message.includes('hello')) {
-        const finalText = "Hello Boss";
+        const finalText = "Hello Sir";
         speech.text = finalText;
     }
 
@@ -73,31 +73,31 @@ function speakThis(message) {
 
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
-        const finalText = "Opening Google";
+        const finalText = "Opening Google sir";
         speech.text = finalText;
     }
 
     else if(message.includes('open instagram')) {
         window.open("https://instagram.com", "_blank");
-        const finalText = "Opening instagram";
+        const finalText = "Opening instagram sir";
         speech.text = finalText;
     }
 
     else if(message.includes('open youtube')) {
         window.open("https://www.youtube.com/", "_blank");
-        const finalText = "Opening youtube";
+        const finalText = "Opening youtube sir";
         speech.text = finalText;
     }
 
     else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
-        const finalText = "This is what i found on internet regarding " + message;
+        const finalText = "This is what i found on internet regarding " + message + "sir";
         speech.text = finalText;
     }
 
     else if(message.includes('wikipedia')) {
         window.open(`https://en.wikipedia.org/wiki/${message.replace("wikipedia", "")}`, "_blank");
-        const finalText = "This is what i found on wikipedia regarding " + message;
+        const finalText = "This is what i found on wikipedia regarding " + message + "sir";
         speech.text = finalText;
     }
 
@@ -115,13 +115,13 @@ function speakThis(message) {
 
     else if(message.includes('calculator')) {
         window.open('Calculator:///')
-        const finalText = "Opening Calculator";
+        const finalText = "Opening Calculator sir";
         speech.text = finalText;
     }
 
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
-        const finalText = "I found some information for " + message + " on google";
+        const finalText = "I found some information for " + message + " on google sir";
         speech.text = finalText;
     }
 
