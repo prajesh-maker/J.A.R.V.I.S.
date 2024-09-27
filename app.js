@@ -93,6 +93,16 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    else if(message.includes('what do we miss')) {
+        const finalText = "ill continue to run variations on the interface, but you should probably prpepare for your guests";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('wake up')) {
+        const finalText = "welcome home sir";
+        speech.text = finalText;
+    }
+
     else if(message.includes('open youtube')) {
         window.open("https://www.youtube.com/", "_blank");
         const finalText = "Opening youtube sir";
