@@ -61,8 +61,18 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    else if(message.includes('jarvis you up')) {
+        const finalText = "or you saw always";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('thanks buddy')) {
+        const finalText = "enjoy yourself sir";
+        speech.text = finalText;
+    }
+
     else if(message.includes('how are you')) {
-        const finalText = "I am fine boss tell me how can i help you";
+        const finalText = "I am fine sir tell me how can i help you";
         speech.text = finalText;
     }
 
@@ -86,6 +96,12 @@ function speakThis(message) {
     else if(message.includes('open youtube')) {
         window.open("https://www.youtube.com/", "_blank");
         const finalText = "Opening youtube sir";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('what is') || message.includes('play') || message.includes('play')) {
+        window.open(`https://www.youtube.com/search?q=${message.replace(" ", "+")}`, "_blank");
+        const finalText = "This is what i found on youtube regarding " + message + "sir";
         speech.text = finalText;
     }
 
