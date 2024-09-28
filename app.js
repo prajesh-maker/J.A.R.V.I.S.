@@ -76,8 +76,8 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
-    else if(message.includes('boss name')) {
-        const finalText = "My boss name is Prajesh";
+    else if(message.includes('your creators name')) {
+        const finalText = "My creator name is Prajesh";
         speech.text = finalText;
     }
 
@@ -90,6 +90,42 @@ function speakThis(message) {
     else if(message.includes('open instagram')) {
         window.open("https://instagram.com", "_blank");
         const finalText = "Opening instagram sir";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('open netflix')) {
+        window.open("https://netflix.com", "_blank");
+        const finalText = "Opening netflix sir";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('open schedule')) {
+        window.open("timetable.jpg");
+        const finalText = "Opening schedule sir";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('open syllabus')) {
+        window.open("https://www.rajalakshmi.org/downloads/syllabus/R2023/R2023-CSBS-Curriculum_and_Syllabus.pdf", "_blank");
+        const finalText = "Opening the syllabus sir";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('open rec website')) {
+        window.open("https://www.rajalakshmi.org/", "_blank");
+        const finalText = "Opening the website sir";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('open calendar')) {
+        window.open("https://www.rajalakshmi.org/downloads/AC/REC-AC-2024-25-ODD-UG-I.PDF", "_blank");
+        const finalText = "Opening the calendar sir";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('open map')) {
+        window.open("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWsrFsAC6L9AE_on8X2UPcBithiEWCNkgkwQ&s");
+        const finalText = "Opening map sir. from rec cafe you should go straight and take an left sir by the right side lift with capacity of 16 passengers is available sir";
         speech.text = finalText;
     }
 
