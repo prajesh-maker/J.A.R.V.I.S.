@@ -87,6 +87,12 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    else if(message.includes('open chat')) {
+         window.open("https://whatsapp.com", "_blank");
+         const finalText = "Opening chat sir";
+         speech.text = finalText;
+    }
+
     else if(message.includes('open instagram')) {
         window.open("https://instagram.com", "_blank");
         const finalText = "Opening instagram sir";
