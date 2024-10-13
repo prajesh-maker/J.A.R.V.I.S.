@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <ul>
+    <h1>PRAJESH Personal AI ChatBot</h1>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <h1>Login</h1>
+    <div class="login-form">
+        <h4>Username</h4>
+        <div class="username-input">
+            <i class="fas fa-user"></i>
+            <input type="email" placeholder="Type your username" id="username">
+        </div>
+        <h4>Password</h4>
+        <div class="password-input"></div>
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" placeholder="Type your password">
+        <p>Forgot password?</p>
+    </div>
+    <button class="login-btn" onclick="func()"
+    >
+      LOGIN
+</button>
+<div class="alternative-signup">
+    <p>Not a member? <span>Sign-up</span></p>
+</div>
+</section>
+<script>
+    function func(){
+        var email = document.getElementById("username").value;
+        var pass = document.getElementById('password').value
+        if (email == 'prajesh@gmail.com' && pass == '1843'){
+        alert("successfull ! ")
+        window.location.assign("index.html")
+    }
+    else{
+        alert("Wrong entry invalid")
+    }
+    }
+    </script>
+ </var>
+</body>
+</html>
